@@ -1,0 +1,20 @@
+ #!/bin/bash
+ packagename="nginx"
+ function install(){
+  local myname="jaspal"
+  echo "installing ${1}"
+ }
+  function configuration(){
+    packagename="tomcat"
+  echo "installing ${1}"
+ }
+
+  function configuration(){
+    packagename="tomcat"
+    echo "config ${1}"
+ }
+ echo "first ${packagename}"
+ install "${packagename}"
+ echo "second ${packagename}"
+ configuration "${packagename}"
+ echo "third ${packagename}"
